@@ -14,6 +14,9 @@ const data_final = JSON.parse(data);
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
+    setInterval(() => {
+        console.log('123')
+    }, 300000);
     res.render('index', { data: data_final });
 });
 
