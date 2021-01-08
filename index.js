@@ -2,6 +2,8 @@ const rp = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
 
+const port = process.env.PORT || 8080
+
 const express = require('express');
 const app = express();
 
@@ -15,7 +17,7 @@ app.get('/', function(req, res) {
     res.render('index', { data: data_final });
 });
 
-app.listen(3000);
+app.listen(port);
 
 // const data = fs.readFileSync('data.json');
 // const data_final = JSON.parse(data);
