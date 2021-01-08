@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
     res.render('index', { data: data_final });
 });
 
-app.listen(80, '0.0.0.0');
+app.listen(3000);
 
 // const data = fs.readFileSync('data.json');
 // const data_final = JSON.parse(data);
